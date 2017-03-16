@@ -33,10 +33,10 @@ class Installer implements Setup\SampleData\InstallerInterface
 
 
     public function __construct(
-        \MagentoEse\VeniaCatalogSampleData\Model\Category $categorySetup,
+       // \MagentoEse\VeniaCatalogSampleData\Model\Category $categorySetup,
         \Magento\Framework\App\State $state
     ) {
-        $this->categorySetup = $categorySetup;
+        //$this->categorySetup = $categorySetup;
 
         try{
             $state->setAreaCode('adminhtml');
