@@ -1,0 +1,15 @@
+{
+    "name": "magentoese/module-venia-lookbook-sample-data",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "classyllama/module-owlcarousel": "dev-master",
+        "magentoese/module-lookbook": "dev-master"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "MagentoEse\\VeniaLookBookSampleData\\": ""
+        }
+    }
+}
