@@ -12,11 +12,16 @@ class Installer implements Setup\SampleData\InstallerInterface
     /**
      * Setup class for category
      *
-     * @var \MagentoEse\VeniaCatalogSampleData\Model\Category
+     * @var \MagentoEse\VeniaLookBookSampleData\Model\Category
      */
     protected $categorySetup;
 
-
+    /**
+     * update class for products
+     *
+     * @var \MagentoEse\VeniaLookBookSampleData\Model\Product
+     */
+    protected $productSetup;
 
     /**
      * App State
@@ -27,16 +32,19 @@ class Installer implements Setup\SampleData\InstallerInterface
 
 
     /**
-     * @param \MagentoEse\VeniaCatalogSampleData\Model\Category $categorySetup
+     * @param \MagentoEse\VeniaLookBookSampleData\Model\Category $categorySetup
+     * @param \MagentoEse\VeniaLookBookSampleData\Model\Product $productSetup
      * @param \Magento\Framework\App\State $state
      */
 
 
     public function __construct(
-       // \MagentoEse\VeniaCatalogSampleData\Model\Category $categorySetup,
+       \MagentoEse\VeniaLookBookSampleData\Model\Category $categorySetup,
+       \MagentoEse\VeniaLookBookSampleData\Model\Product $productSetup,
         \Magento\Framework\App\State $state
     ) {
-        //$this->categorySetup = $categorySetup;
+        $this->categorySetup = $categorySetup;
+        $this->productSetup = $productSetup;
 
         try{
             $state->setAreaCode('adminhtml');
@@ -53,8 +61,10 @@ class Installer implements Setup\SampleData\InstallerInterface
     public function install()
     {
         //add shop the look cat and subcats
+        $this->categorySetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/categories.csv']);
         //add image to cat
         //add lookbook info to products
+        $this->productSetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/productText.csv']);
         //add products to lookbook collections
         //move STL attributeset to only venia attribute groups
 
