@@ -12,7 +12,7 @@ use Magento\Framework\Setup\SampleData\Context as SampleDataContext;
  */
 class Category
 {
-    protected $store='default';
+    protected $store='venia_us';
     /**
      * @var \Magento\Framework\Setup\SampleData\FixtureManager
      */

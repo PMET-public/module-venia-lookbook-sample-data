@@ -1,6 +1,8 @@
-name,url_key,path,active,is_anchor,include_in_menu,position,display_mode,custom_layout_update
-Shop The Look,shop-the-look,,1,0,1,5,,
-Collection 1,collection-1,Shop The Look,1,0,0,1,,
-Collection 2,collection-2,Shop The Look,1,0,0,1,,
-Collection 3,collection-3,Shop The Look,1,0,0,1,,
-Collection 4,collection-4,Shop The Look,1,0,0,1,,
+name,url_key,path,active,is_anchor,include_in_menu,position,display_mode,custom_layout_update,skus
+Shop The Look,shop-the-look,,1,0,1,5,,,
+Collection 1,collection-1,Shop The Look,1,0,0,1,,,"VD04,VA10,VA11"
+Collection 2,collection-2,Shop The Look,1,0,0,2,,,"VD06,VA12,VA22"
+Collection 3,collection-3,Shop The Look,1,0,0,3,,,"VSK08,VSW09,VA13"
+Collection 4,collection-4,Shop The Look,1,0,0,4,,,"VSW05,VP04,VA19"
+Collection 5,collection-5,Shop The Look,1,0,0,5,,,"VT11,VP05,VA15"
+Collection 6,Collection-6,Shop The Look,1,0,0,6,,,"VT10,VA20,VA16"
