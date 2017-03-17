@@ -61,12 +61,14 @@ class Installer implements Setup\SampleData\InstallerInterface
     public function install()
     {
         //add shop the look cat and subcats
-        //$this->categorySetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/categories.csv']);
+        $this->categorySetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/categories.csv']);
         //add image to cat
-        //add lookbook info to products
-        $this->productSetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/productText.csv']);
-        //add products to lookbook collections
+        //add lookbook info and image to products, assign to categories
+        $this->productSetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/products.csv']);
+        //assign priorities to category
+        //TODO:where is the look book cat text coming from?
         //move STL attributeset to only venia attribute groups
+        //add look book block to STL main category
 
     }
 }
