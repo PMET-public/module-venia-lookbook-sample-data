@@ -4,7 +4,7 @@
     "require": {
         "magento/framework": "*",
         "classyllama/module-owlcarousel": "dev-master",
-        "magentoese/module-lookbook": "dev-develop",
+        "magentoese/module-lookbook": "dev-master",
         "firegento/fastsimpleimport2": "dev-master"
     },
     "autoload": {

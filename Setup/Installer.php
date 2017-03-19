@@ -65,6 +65,7 @@ class Installer implements Setup\SampleData\InstallerInterface
         set to static block only and set landing page*/
         //TODO:Add category images to pub/media/catalog/category
         //TODO:Add look book block id to categories.csv
+        //TODO:Add CMS module to module sequence
         $this->categorySetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/categories.csv']);
         //add lookbook info and image to products, assign to categories, set priority
         $this->productSetup->install(['MagentoEse_VeniaLookBookSampleData::fixtures/products.csv']);
